@@ -7,9 +7,10 @@ spec:
   project: default
 
   source:
-    repoURL: 
+    repoURL: https://github.com/koushiksiripuram/html-argocd-css.git
     targetRevision: HEAD
-    path: dev
+    path: dev   # or "." if files are in root
+
   destination: 
     server: https://kubernetes.default.svc
     namespace: html-app
